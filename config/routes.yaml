@@ -1,5 +1,19 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+#index:
+#    path: /cat
+#    controller: App\Controller\TypeCats::cat
+
+#path_cat:
+#    path: /cat
+#    controller:  App\Controller\TypeCats::cat
+
+#controllers:
+#    resource:
+#        path: \cat
+#        namespace: App\Controller
+#    type: attribute
+#
+#kernel:
+#    resource: App\Kernel
+#    type: attribute
+
+
