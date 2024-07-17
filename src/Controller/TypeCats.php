@@ -10,13 +10,13 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class TypeCats extends AbstractController
 {
-    #[Route('/home', name: 'HomePage', methods: ['GET', 'HEAD'])]
+    #[Route('/home', name: 'HomePage', methods: ['GET', 'POST'])]
     public function cat(): Response
     {
         return $this->render('pets/home.html.twig');
     }
 
-    #[Route('/dogAndCats/{param}', name: 'CatDogPage', methods: ['GET', 'HEAD'])]
+    #[Route('/dogAndCats/{param}', name: 'CatDogPage', methods: ['GET', 'POST'])]
     public function dogAndCats($param): Response
     {
         return $this->render('pets/show.html.twig', [
